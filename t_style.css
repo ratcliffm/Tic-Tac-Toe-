@@ -1,0 +1,74 @@
+html {
+	height: 100%;
+}
+
+/* align my header image */
+img {
+	max-width: 100%;
+    /* box-shadow: #fdf8fc 20px 0px 25px #fdf8fc -20px 0px 25px;
+    text-shadow: #fdf8fc 20px 0px 25px #fdf8fc -20px 0px 25px; */
+} 
+
+body {
+    width: 100%;
+	max-width: 900px;
+    background-color: #fff1fc;
+}
+
+/* create the 'hash' for the tic tac toe board */
+td {
+    border: 4px solid #a39ed6;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: auto;
+    font-family: cursive;
+    font-size: 55px;
+    color: #a39ed6;
+    cursor: pointer;
+}
+
+/* position the table on the page */
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 32%; 
+    top: 25%;
+    bottom: 25%;
+}
+
+/* First row of squares - getting rid of border lines for table */
+table tr:first-child td {
+    border-top: 0;  
+}
+
+/* Third row of squares */
+table tr:last-child td {
+    border-bottom: 0;  
+}
+
+/* First collomn of squares */
+table tr td:first-child {
+    border-left: 0;  
+}
+
+/* Third collomn of squares */
+table tr td:last-child {
+    border-right: 0;  
+}
+
+.gameOver {
+    display: none;
+    width: 200px;
+    background-color: rgb(163, 158, 214, 90%);
+    position: absolute;
+    top: 36.5%;
+    left: 32%;
+    padding: 45px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #a39ed6;
+    font-size: 2em;
+}
+
+
